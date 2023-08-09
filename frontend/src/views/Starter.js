@@ -1,6 +1,6 @@
 import { Col, Row } from "reactstrap";
 import SalesChart from "../components/dashboard/SalesChart";
-import {Piechart} from "../components/dashboard/Piechart";
+import { Piechart } from "../components/dashboard/Piechart";
 import Feeds from "../components/dashboard/Feeds";
 import ProjectTables from "../components/dashboard/ProjectTable";
 import TopCards from "../components/dashboard/TopCards";
@@ -16,38 +16,38 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const BlogData = [
-  {
-    image: bg1,
-    title: "This is simple blog",
-    subtitle: "2 comments, 1 Like",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    btnbg: "primary",
-  },
-  {
-    image: bg2,
-    title: "Lets be simple blog",
-    subtitle: "2 comments, 1 Like",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    btnbg: "primary",
-  },
-  {
-    image: bg3,
-    title: "Don't Lamp blog",
-    subtitle: "2 comments, 1 Like",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    btnbg: "primary",
-  },
-  {
-    image: bg4,
-    title: "Simple is beautiful",
-    subtitle: "2 comments, 1 Like",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    btnbg: "primary",
-  },
+  // {
+  //   image: bg1,
+  //   title: "This is simple blog",
+  //   subtitle: "2 comments, 1 Like",
+  //   description:
+  //     "This is a wider card with supporting text below as a natural lead-in to additional content.",
+  //   btnbg: "primary",
+  // },
+  // {
+  //   image: bg2,
+  //   title: "Lets be simple blog",
+  //   subtitle: "2 comments, 1 Like",
+  //   description:
+  //     "This is a wider card with supporting text below as a natural lead-in to additional content.",
+  //   btnbg: "primary",
+  // },
+  // {
+  //   image: bg3,
+  //   title: "Don't Lamp blog",
+  //   subtitle: "2 comments, 1 Like",
+  //   description:
+  //     "This is a wider card with supporting text below as a natural lead-in to additional content.",
+  //   btnbg: "primary",
+  // },
+  // {
+  //   image: bg4,
+  //   title: "Simple is beautiful",
+  //   subtitle: "2 comments, 1 Like",
+  //   description:
+  //     "This is a wider card with supporting text below as a natural lead-in to additional content.",
+  //   btnbg: "primary",
+  // },
 ];
 
 const baseURL = "#"
@@ -107,14 +107,14 @@ const Starter = () => {
         </Col>
         <Col sm="6" lg="6" xl="6" xxl="6">
           {/* <SalesChart /> */}
-          <Piechart/>
+          <Piechart />
         </Col>
       </Row>
       {/***Table ***/}
       <Row>
         <Col lg="12">
           {/* <ProjectTables /> */}
-          {<MuiTable /> }
+          {<MuiTable />}
         </Col>
       </Row>
       {/***Blog Cards***/}

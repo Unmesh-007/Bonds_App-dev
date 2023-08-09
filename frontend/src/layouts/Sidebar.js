@@ -18,11 +18,11 @@ const navigation = [
     href: "/badges",
     icon: "bi bi-wallet",
   },
-  {
-    title: "Securities",
-    href: "/buttons",
-    icon: "bi bi-hdd-stack",
-  },
+  // {
+  //   title: "Securities",
+  //   href: "/buttons",
+  //   icon: "bi bi-hdd-stack",
+  // },
   {
     title: "Trades",
     href: "/cards",
@@ -49,18 +49,19 @@ const Sidebar = () => {
   return (
     <div className="p-3">
       <div className="d-flex align-items-center">
-        <Logo />
+        <h4><strong>Sync-Security</strong></h4>
+        {/* <Logo /> */}
         <span className="ms-auto d-lg-none">
-        <Button
-          close
-          size="sm"
-          className="ms-auto d-lg-none"
-          onClick={() => showMobilemenu()}
-        ></Button>
+          <Button
+            close
+            size="sm"
+            className="ms-auto d-lg-none"
+            onClick={() => showMobilemenu()}
+          ></Button>
         </span>
       </div>
       <div className="pt-4 mt-2">
-        <Nav vertical className="sidebarNav" style={{position:"fixed"}}>
+        <Nav vertical className="sidebarNav" style={{ position: "fixed" }}>
           {navigation.map((navi, index) => (
             <NavItem key={index} className="sidenav-bg">
               <Link

@@ -1,52 +1,45 @@
 import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardGroup,
-  Button,
+
   Row,
   Col,
 } from "reactstrap";
 import Blog from "../../components/dashboard/Blog";
-import bg1 from "../../assets/images/bg/bg1.jpg";
-import bg2 from "../../assets/images/bg/bg2.jpg";
-import bg3 from "../../assets/images/bg/bg3.jpg";
-import bg4 from "../../assets/images/bg/bg4.jpg";
+import customer from "../customer1.png";
+import secure from "../secure1.png";
+import port from "../port.jpeg";
+import bell from "../bell1.jpeg";
 
 const BlogData = [
   {
-    image: bg1,
-    title: "This is simple blog",
-    subtitle: "2 comments, 1 Like",
+    image: port,
+    title: "Portfolio Overview",
+    // subtitle: "2 comments, 1 Like",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Users can monitor their portfolio holdings, track their performance, and view their account balances.",
     btnbg: "primary",
   },
   {
-    image: bg2,
-    title: "Lets be simple blog",
-    subtitle: "2 comments, 1 Like",
+    image: customer,
+    title: "Customer Support",
+    // subtitle: "2 comments, 1 Like",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Access to customer support for assistance with account-related issues, technical problems, or inquiries.",
     btnbg: "primary",
   },
   {
-    image: bg3,
-    title: "Don't Lamp blog",
-    subtitle: "2 comments, 1 Like",
+    image: secure,
+    title: "Security Features ",
+    // subtitle: "2 comments, 1 Like",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Enhanced security measures such as two-factor authentication, biometric login and sensitive information.",
     btnbg: "primary",
   },
   {
-    image: bg4,
-    title: "Simple is beautiful",
-    subtitle: "2 comments, 1 Like",
+    image: bell,
+    title: "Alerts and Notifications ",
+    // subtitle: "2 comments, 1 Like",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Users could set up customizable alerts for changes in bond prices, interest rates, or other market conditions.",
     btnbg: "primary",
   },
 ];
@@ -57,7 +50,7 @@ const Cards = () => {
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-1*/}
       {/* --------------------------------------------------------------------------------*/}
-      <h5 className="mb-3">Basic Card</h5>
+      <h5 className="mb-3">Trade-Related </h5>
       <Row>
         {BlogData.map((blg, index) => (
           <Col sm="6" lg="6" xl="3" key={index}>
@@ -74,7 +67,7 @@ const Cards = () => {
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-2*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Row>
+      {/* <Row>
         <h5 className="mb-3 mt-3">Alignment Text</h5>
         <Col md="6" lg="4">
           <Card body>
@@ -112,11 +105,11 @@ const Cards = () => {
             </div>
           </Card>
         </Col>
-      </Row>
+      </Row> */}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-2*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Row>
+      {/* <Row>
         <h5 className="mb-3 mt-3">Colored Card</h5>
         <Col md="6" lg="3">
           <Card body color="primary" inverse>
@@ -214,11 +207,11 @@ const Cards = () => {
             </div>
           </Card>
         </Col>
-      </Row>
+      </Row> */}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-Group*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Row>
+      {/* <Row>
         <h5 className="mb-3 mt-3">Card Group</h5>
         <Col>
           <CardGroup>
@@ -268,7 +261,7 @@ const Cards = () => {
             </Card>
           </CardGroup>
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 };
