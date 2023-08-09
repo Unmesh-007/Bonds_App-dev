@@ -6,7 +6,6 @@ import {
   Nav,
   NavItem,
   NavbarBrand,
-  UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -60,7 +59,7 @@ const Header = () => {
         <Nav className="me-auto" navbar>
           <NavItem>
             <Link to="/starter" className="nav-link">
-              Starter
+              Main
             </Link>
           </NavItem>
           <NavItem>
@@ -68,7 +67,7 @@ const Header = () => {
               About
             </Link>
           </NavItem>
-          <UncontrolledDropdown inNavbar nav>
+          {/* <UncontrolledDropdown inNavbar nav>
             <DropdownToggle caret nav>
               DD Menu
             </DropdownToggle>
@@ -78,7 +77,7 @@ const Header = () => {
               <DropdownItem divider />
               <DropdownItem>Reset</DropdownItem>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </UncontrolledDropdown> */}
         </Nav>
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle color="primary">
